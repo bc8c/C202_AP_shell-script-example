@@ -11,6 +11,7 @@ FILESIZE=$1
 #FILESIZE=$(stat -c%s "$FILE")
 echo "file size: $FILESIZE"
 if [ $FILESIZE -lt 1000 ];then
-  #command goes here
   echo "file size is less than 1000"
+else
+  echo "file size is larger than 1000"
 fi
